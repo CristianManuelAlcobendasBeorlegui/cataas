@@ -9,18 +9,23 @@ Luego, a partir de las rutas definidas en el fichero `/routes/api` se pueden hac
 
 ## Poner en marcha el proyecto
 
-### 1. Descargar e instalar dependencias
+### 1. Descargar el proyecto
+```bash
+git clone https://github.com/CristianManuelAlcobendasBeorlegui/cataas
+```
+
+### 2. Descargar e instalar dependencias
 ```bash
 composer update
 composer install
 ```
 
-### 2. Crear las tablas y rellenarlas con datos de la web de gatitos
+### 3. Crear las tablas y rellenarlas con datos de la web de gatitos
 ```bash
 php artisan migrate:refresh --seed
 ```
 
-### 3. Iniciar el servidor
+### 4 Iniciar el servidor
 ```bash
 php artisan serve
 ```
